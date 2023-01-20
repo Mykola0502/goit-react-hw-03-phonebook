@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Item = styled.li`
+export const Item = styled.div`
   padding: 5px;
   display: flex;
   align-items: center;

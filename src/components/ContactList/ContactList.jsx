@@ -8,13 +8,14 @@ export const ContactList = ({ contacts, onDeleteContact }) => {
       {contacts
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(({ id, name, number }) => (
-          <ContactItem
-            key={id}
-            id={id}
-            name={name}
-            number={number}
-            deleteContact={onDeleteContact}
-          />
+          <li key={id}>
+            <ContactItem
+              id={id}
+              name={name}
+              number={number}
+              deleteContact={onDeleteContact}
+            />
+          </li>
         ))}
     </ul>
   );
